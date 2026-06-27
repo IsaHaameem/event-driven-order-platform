@@ -1,5 +1,32 @@
+# Secrets / local config — never commit
 .env
+.env.*
+!.env.example
+
+# Maven build output — one per service
+*/target/
 target/
+
+# Compiled class files
+*.class
+
+# Logs
 *.log
+
+# IDE
 .idea/
 *.iml
+*.iws
+.vscode/
+!.vscode/extensions.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Java
+hs_err_pid*
+replay_pid*
